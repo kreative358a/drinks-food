@@ -46,7 +46,7 @@ console.log('singleMeal: ', singleMeal)
 
   const validIngredients = Object.keys(singleMeal)
     .filter(
-      (key) => key.startsWith("strIngredient") && singleMeal[key] !== null || ""
+      (key) => key.startsWith("strIngredient") && singleMeal[key] !== null && singleMeal[key] !== ""
     )
     .map((key) => singleMeal[key]);
 
