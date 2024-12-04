@@ -51,7 +51,7 @@ console.log('singleMeal: ', singleMeal)
     .map((key) => singleMeal[key]);
 
   const validstrMeasures = Object.keys(singleMeal)
-    .filter((key) => key.startsWith("strMeasure") && singleMeal[key] !== null || "")
+    .filter((key) => key.startsWith("strMeasure") && singleMeal[key] !== "")
     .map((key) => singleMeal[key]);
 
   // console.log("validstrMeasures: ", validstrMeasures);
