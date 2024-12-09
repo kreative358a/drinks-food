@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
@@ -35,7 +35,7 @@ const queryClient = new QueryClient({
 // /?search=all
 const router = createBrowserRouter([
   {
-    path: '*',
+    path: '/',
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
