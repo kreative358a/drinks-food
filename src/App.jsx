@@ -86,6 +86,10 @@ const router = createBrowserRouter([
         path: "about",
         element: <About />,
       },
+      {
+        path: "*",
+        element: <Navigate replace to="/" /> 
+      }      
     ],
   },
 ]);
